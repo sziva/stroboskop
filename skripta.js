@@ -14,6 +14,7 @@ window.addEventListener('load', function() {
 		
 	//Odstrani barve
 	
+	
 	//Stroboskop
 	var vrednosti = [];
 	var minCas = 0;
@@ -34,6 +35,7 @@ window.addEventListener('load', function() {
 	
 	var stop = function(event) {
 		ustavi = true;
+		
 	}
 	
 	var zagon = function(event) {
@@ -52,6 +54,7 @@ window.addEventListener('load', function() {
 		start.innerHTML = "Ustavi stroboskop";
 		start.removeEventListener('click', zagon);
 		start.addEventListener('click', stop);
+		
 	}
 	
 	document.querySelector("#start").addEventListener('click', zagon);
